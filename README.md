@@ -25,6 +25,8 @@ The student picking this up would definitely learn a lot about Ponylang and its 
 
 #### Possible Paths
 
+This is just the general ideas to pull this off, I could come up with. Please take these as suggestions and don't let you limit by this.
+
 - Write the Language Server in C by using `libponyc`, which is part of [ponyc](https://github/ponylang/ponyc/tree/master/src/libponyc).
   - Advantage: Access to the same AST as is used for compilation. Typechecking for free.
   - Disadvantage: Compiler might needs some adaptation (which we will gladly help with, if need be). Writing a HTTP Api for the LSP mught not be as convenient in C, but the C code could also be used via FFI from Pony or any other language capable of FFI.
@@ -36,6 +38,8 @@ The student picking this up would definitely learn a lot about Ponylang and its 
 - Use the [ANTLR](https://www.antlr.org/) grammar generated from the grammar in the compiler: https://github.com/ponylang/ponyc/blob/master/pony.g to write the parser in another language that has good support and a rich ecosystem to develop an LSP.
   - Advantage: Plethora of available tools, maybe lots of experience.
   - Disadvantage: no typechecking like in ponyc.
+
+- ...
 
 #### Skills required
 
