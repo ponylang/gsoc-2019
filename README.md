@@ -39,7 +39,8 @@ And last but not least the everlasting gratefulness of the Pony community is gua
 
 #### Mentor
 
-[Matthias Wahl](https://github.com/mfelsche)
+- [Matthias Wahl](https://github.com/mfelsche)
+- [Theo Butler](https://github.com/Theodus)
 
 #### Difficulty
 
