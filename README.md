@@ -92,3 +92,37 @@ Maybe someone else wants to help, too?
 #### Difficulty
 
 "medium" to "hard" (due to exploratory nature of this project)
+
+
+
+### WALLAROO AS BEAM RUNNER
+
+Walaroo would serve as a great "runner" to work with Apache Beam.  Alternatively, Beam would benefit from a non-JVM runner and Walaroo would be well served from the rich ecosystem of IOs, and growing user base.  I'd like to see these two things work together!  
+
+
+#### Expected outcomes
+
+PONY would gain from Walaroos visibility which would come from being a unique runner for Beam (which has additional reach).  A runner written in PONY would force Beam to think about non-JVM land.  It would also open the door nicely for a PONY SDK (down the road) and write the interface IO in PONY at the other end.    
+
+The Student would benefit from diving into Ponlylang, as well as streaming systems overall (Walaroo and PONY).  Interesting work is going on around a common 'Portability Framework' which this project would have impact in informorming.
+
+
+
+#### Skills required
+
+- Knowledge of JAVA (or JVM language)
+- Knowledge of Pony would be helpful, but not required
+- Knowledge of Apache Beam would be helpful, but not required
+- ???
+
+
+#### Mentor
+
+- [Austin Bennett](https://github.com/brucearctor)
+- HOPEFULLY (AND NECESSARILY) others in the PONY/WALAROO COMMUNITY
+- I would also pull in people on the Beam side, I'm a heavy advocate and user, and just getting into the nuances and development of it
+
+
+#### Difficulty
+
+"hard" to get implimented fully.  maybe "medium" to wire and get some basic functionality and reasonable POC put together.  
