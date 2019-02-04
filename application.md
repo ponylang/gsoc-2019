@@ -4,7 +4,7 @@ NOTE: This is a draft that will be revised
 
 # Why does your org want to participate in Google Summer of Code?
 
-Pony has a small but dedicated community. This makes it an ideal project for students because their contributions will have a large impact. The project will benefit from the work the students do, and the students will be able to point to their work as a major contribution to an open source project.
+Pony has a small but dedicated community. This makes it an ideal project for students because their contributions will have a large impact. The project will benefit from the work the students do, and the students will be able to point to their work as a major contribution to an open source project. Also students can learn a lot about the compilers, language runtimes, concurrency, type-system etc. by contributing to Pony.
 
 # How many potential mentors have agreed to mentor this year?
 
