@@ -94,7 +94,7 @@ Maybe someone else wants to help, too?
 "medium" to "hard" (due to exploratory nature of this project)
 
 
-### Support Finite recursive tyoe aliases
+### Support Finite Recursive Type Aliases
 
 Currently Pony has type aliases but doesn't allow recursive alias such as:
 
@@ -117,7 +117,7 @@ type JsonEntity is
 
 This makes a number of APIs that have to be constructed to work around this quite painful to use. Any data type that has Arrays etc that can contain its other types (like JSON does) are affected. There's been an issue open for a long time to address this. Someone picking this up and introducing the solution would be great. [ponylang/ponyc#267](https://github.com/ponylang/ponyc/issues/267)
 
-The issue has been labeled as "major effort" in terms of complexity. This is primarily because it touches many parts of the compiler. As I stated before, this would be a great issue to dig in and learn how the compiler works. Great for someone who wants to dig into compiler work but hasn't done much previously with other compilers (or the Pony compiler).
+The github issue has been labeled as "major effort" in terms of complexity. This is primarily because it touches many parts of the compiler. As I stated before, this would be a great issue to dig in and learn how the compiler works. Great for someone who wants to dig into compiler work but hasn't done much previously with other compilers (or the Pony compiler).
 
 #### Expected outcomes
 
@@ -127,7 +127,7 @@ The end result of this would the ability to definite relationships like the one 
 
 #### Skills Required
 
-- some experience in C programming
+- Some experience in C programming.
 - Some initial knowledge about compilers and static type systems would be helpful, but is not a must.
 
 #### Mentor
