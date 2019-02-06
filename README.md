@@ -93,7 +93,6 @@ Maybe someone else wants to help, too?
 
 "medium" to "hard" (due to exploratory nature of this project)
 
-
 ### Support Finite Recursive Type Aliases
 
 Currently Pony has type aliases but doesn't allow recursive alias such as:
@@ -137,3 +136,25 @@ To be announced.
 #### Difficulty
 
 "medium" to "hard", mostly depending on your background in compilers and C-programming.
+
+### AWS Lambda runtime for Pony
+
+[Custom AWS Lambda Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html) can be created to allow Lambda functions to be written in any language. This project would be to create the necessary libraries and documentation that would allow someone to write a Lambda function in Pony.
+
+#### Expected outcomes
+
+At the end of this project it will be possible for anyone to create a Lambda function in Pony and run it on AWS. The deliverables would most likely be a Pony library for creating Lambda functions and documentation for using the library and deploying the function.
+
+#### Skills required
+
+- A basic understanding of how AWS Lambda works (easily obtainable from their docs and other sources).
+
+#### Mentor
+
+To be announced.
+
+#### Difficulty
+
+"easy"
+
+
