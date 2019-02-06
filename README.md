@@ -93,8 +93,6 @@ Maybe someone else wants to help, too?
 
 "medium" to "hard" (due to exploratory nature of this project)
 
-
-
 ### WALLAROO AS BEAM RUNNER
 
 Walaroo would serve as a great "runner" to work with Apache Beam.  Alternatively, Beam would benefit from a non-JVM runner and Walaroo would be well served from the rich ecosystem of IOs, and growing user base.  I'd like to see these two things work together!  
@@ -126,3 +124,67 @@ The Student would benefit from diving into Ponlylang, as well as streaming syste
 #### Difficulty
 
 "hard" to get implimented fully.  maybe "medium" to wire and get some basic functionality and reasonable POC put together.  
+
+### Support Finite Recursive Type Aliases
+
+Currently Pony has type aliases but doesn't allow recursive alias such as:
+
+```pony
+type JsonNull    is None
+type JsonBoolean is Bool
+type JsonString  is String
+type JsonNumber  is F64
+type JsonArray   is Array[JsonEntity]
+type JsonObject  is Map[JsonString, JsonEntity]
+
+type JsonEntity is
+  ( JsonNull
+  | JsonBoolean
+  | JsonString
+  | JsonNumber
+  | JsonArray
+  | JsonObject)
+```
+
+This makes a number of APIs that have to be constructed to work around this quite painful to use. Any data type that has Arrays etc that can contain its other types (like JSON does) are affected. There's been an issue open for a long time to address this. Someone picking this up and introducing the solution would be great. [ponylang/ponyc#267](https://github.com/ponylang/ponyc/issues/267)
+
+The github issue has been labeled as "major effort" in terms of complexity. This is primarily because it touches many parts of the compiler. As I stated before, this would be a great issue to dig in and learn how the compiler works. Great for someone who wants to dig into compiler work but hasn't done much previously with other compilers (or the Pony compiler).
+
+#### Expected outcomes
+
+Whoever was to take this on, would get an opportunity to dig into the compiler a great deal and in the process learn an awful lot about the Pony type system and the compiler, as well as about type-systems and compilers in general.
+
+The end result of this would the ability to definite relationships like the one @jemc describes in the attached issue. Amongst enabling a lot of interesting language constructs that are currently forbidden, this project would finally enable Ponylang to redefine its [JSON](https://stdlib.ponylang.org/json--index) library and bring it into good shape.
+
+#### Skills Required
+
+- Some experience in C programming.
+- Some initial knowledge about compilers and static type systems would be helpful, but is not a must.
+
+#### Mentor
+
+To be announced.
+
+#### Difficulty
+
+"medium" to "hard", mostly depending on your background in compilers and C-programming.
+
+### AWS Lambda runtime for Pony
+
+[Custom AWS Lambda Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html) can be created to allow Lambda functions to be written in any language. This project would be to create the necessary libraries and documentation that would allow someone to write a Lambda function in Pony.
+
+#### Expected outcomes
+
+At the end of this project it will be possible for anyone to create a Lambda function in Pony and run it on AWS. The deliverables would most likely be a Pony library for creating Lambda functions and documentation for using the library and deploying the function.
+
+#### Skills required
+
+- A basic understanding of how AWS Lambda works (easily obtainable from their docs and other sources).
+
+#### Mentor
+
+To be announced.
+
+#### Difficulty
+
+"easy"
